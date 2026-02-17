@@ -1,0 +1,38 @@
+&CONTROL
+    calculation = "scf"
+    outdir = './',
+    pseudo_dir = '/home/samim/quantum_base/upf_files',
+    prefix = 'graphene' ,
+/
+
+&SYSTEM
+    a           = 2.463
+    c           = 20
+    degauss     = 0.01
+    ecutrho     = 400
+    ecutwfc     = 40
+    ibrav       = 4
+    nat         = 2
+    ntyp        = 1
+    nspin       = 2
+    occupations = "smearing"
+    smearing    = "mv"
+    starting_magnetization(1) = 0.0
+/
+
+&ELECTRONS
+    conv_thr         = 1.D-07
+    electron_maxstep = 200
+    mixing_beta      = 0.7
+/
+
+
+K_POINTS {automatic}
+12  12  1  0 0 0
+
+ATOMIC_SPECIES
+C      12.01070  C.pbe-n-rrkjus_psl.0.1.UPF 
+
+ATOMIC_POSITIONS {angstrom}
+C                1.2335485661        0.7144836184        9.7637700000
+C                0.0019914339        1.4255263816        9.7637700000

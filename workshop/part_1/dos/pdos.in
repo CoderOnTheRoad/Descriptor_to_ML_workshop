@@ -1,0 +1,7 @@
+&PROJWFC
+prefix  = "graphene",
+outdir  = "./",
+filproj = 'pdos.dat',
+/
+
+
